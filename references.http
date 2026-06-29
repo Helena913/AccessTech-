@@ -1,0 +1,31 @@
+
+###
+
+POST http://localhost:3000/api/configuracoes
+Content-Type: application/json
+
+{
+  "cpf": "12345678900",
+  "nome": "Maria Silva",
+  "email": "maria@email.com",
+  "tamanhoFonte": "Grande",
+  "temaInterface": "Escuro",
+  "comandosVoz": true
+}
+
+### 
+GET http://localhost:3000/api/configuracoes/12345678900
+
+
+
+### 
+PUT http://localhost:3000/api/configuracoes/emergencia
+Content-Type: application/json
+
+{
+  "cpf": "12345678900",
+  "contatoEmergencia": "(11) 99999-9999"
+}
+
+###
+DELETE http://localhost:3000/api/configuracoes/12345678900
